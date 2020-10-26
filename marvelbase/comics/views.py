@@ -31,10 +31,3 @@ def index(request):
 # def save_comic(request, comic):
 #    Comic.objects.get(name=title).save()
 #    return redirect('index')
-# def fill(request):
-#    if 'application/x-www-form-urlencoded' in request.META['CONTENT_TYPE']:
-#        print('hi')
-#        data = json.loads(request.body)
-#        title = data.get('title', None)
-#        ....................  # not sure how to save to database
-#    pass
