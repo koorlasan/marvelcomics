@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search results</title>
+</head>
+<body>
+
+<H3>Search results for "{{ title }}": </H3>
+
+{% if comics %}
+    <table>
+    <tr>
+        <td><b>Название комикса</b></td>
+        <td><b>Описание</b></td>
+        <td><b>Миниатюра</b></td>
+    </tr>
+    {% for comic in comics %}
+        <tr>
+            <td> {{ comic.title }} </td>
+            <td> {{ comic.description }} </td>
+            <td> {{ comic.thumbnail }} </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endif %}
+
+
+</body>
+</html>

@@ -11,7 +11,8 @@
 
 </head>
 <body>
-  <form action= method="post">
+  <form action='' method="post">
+      {% csrf_token %}
     <label for="title">Enter title: </label>
     <input id="title" type="text" name="title" >
     <input type="submit" value="OK">

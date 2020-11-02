@@ -9,25 +9,47 @@ from .form import ComicInfo
 
 def index(request):
     if request.method == 'POST':
-        res = requests.get(mygateway).json()
-        comics = res['data']['results']
-        for com in Comic:
-            comics = {
-                'title': comics[0]['title'],
-                'description': comics[0]['description'],
-                'thumbnail': comics[0]['thumbnail']['path'],
-            }
-#    title = Comic.objects.all()
-#    description = Comic.objects.all()
-#    thumbnail = Comic.objects.all()
+        title = request.POST['title']
+        return HttpResponseRedirect(f'show-results/{title}')
 
-#    return render(
-#        request,
-#        'index.html',
-#        context={'title': title, 'description': description,
-#                 'thumbnail': thumbnail
-#                 }
-#    )
+    return render(
+       request,
+       'index.html',
+   )
+
 # def save_comic(request, comic):
 #    Comic.objects.get(name=title).save()
 #    return redirect('index')
+
+def show_results(request, title):
+    if request.method == 'POST':
+        pass
+        # Здесь мы возможно будем сохранять комикс в БД
+    else:
+
+        # Дальше надо найти комиксы по названию "title"
+
+        # res = requests.get(mygateway).json()
+        # comics = res['data']['results']
+        # data = []
+        # for com in comics:
+        #     data.append({
+        #         'title': com['title'],
+        #         'description': com['description'],
+        #         'thumbnail': com['thumbnail']['path'],
+        #     })
+
+        # Для примера
+        data = [{
+            'title': 'Название',
+            'description': 'бла-бла',
+            # 'thumbnail': '',
+        },
+            {
+                'title': 'Название2',
+                'description': 'Описание2',
+                # 'thumbnail': '',
+            },
+        ]
+        return render(request, 'show-results.html', {'comics': data, 'title': title})
+
