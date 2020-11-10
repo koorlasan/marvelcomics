@@ -1,40 +1,58 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from .models import Comic
-from .apikey import mygateway
-import requests
-from .models import Comic
 from .form import ComicInfo
+import time
+import hashlib
+import requests
 
 
 def index(request):
     if request.method == 'POST':
-        res = requests.get(mygateway).json()
-        comics = res['data']['results']
-        for com in Comic:
-            comics = {
-                'title': comics[0]['title'],
-                'description': comics[0]['description'],
-                'thumbnail': comics[0]['thumbnail']['path'],
-            }
-#    title = Comic.objects.all()
-#    description = Comic.objects.all()
-#    thumbnail = Comic.objects.all()
+        title = request.POST['title']
+        return HttpResponseRedirect(f'show-results/{title}')
 
-#    return render(
-#        request,
-#        'index.html',
-#        context={'title': title, 'description': description,
-#                 'thumbnail': thumbnail
-#                 }
-#    )
+    return render(
+       request,
+       'index.html',
+   )
+
 # def save_comic(request, comic):
 #    Comic.objects.get(name=title).save()
 #    return redirect('index')
-# def fill(request):
-#    if 'application/x-www-form-urlencoded' in request.META['CONTENT_TYPE']:
-#        print('hi')
-#        data = json.loads(request.body)
-#        title = data.get('title', None)
-#        ....................  # not sure how to save to database
-#    pass
+
+def show_results(request, title):
+    publickey = "058789c458e2a5c666c1878c07fdc37b"
+    privatekey = "277608909782d353e372ac535074386bdb3d8815"
+    ts = round(time.time())
+    mystring = str(ts) + privatekey + publickey
+    hash_object = hashlib.md5(mystring.encode())
+    mygateway = f'https://gateway.marvel.com/v1/public/comics?orderBy=title&titleStartsWith={title}&format=comic&formatType=comic&ts={str(ts)}&apikey={publickey}&hash={hash_object.hexdigest()}'
+    if request.method == 'POST':
+        pass
+        # Здесь мы возможно будем сохранять комикс в БД
+    else:
+
+        # Дальше надо найти комиксы по названию "title"
+
+         res = requests.get(mygateway).json()
+         comics = res['data']['results']
+         data = [{
+            'title': '',
+            'description': '',
+            'thumbnail': '',
+        },
+            {
+                'title': '',
+                'description': '',
+                'thumbnail': '',
+            },
+        ]
+         for com in comics:
+             data.append({
+                 'title': com['title'],
+                 'description': com['description'],
+                 'thumbnail': com['thumbnail']['path']+'/portrait_xlarge.jpg',
+             })
+
+    return render(request, 'show-results.html', {'comics': data, 'title': title})
