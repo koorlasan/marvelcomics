@@ -52,7 +52,7 @@ def show_results(request, title):
              data.append({
                  'title': com['title'],
                  'description': com['description'],
-                 'thumbnail': com['thumbnail']['path']+'/portrait_xlarge.jpg',
+                 'thumbnail': com['thumbnail']['path']+'/portrait_xlarge.'+com['thumbnail']['extension'],
              })
 
     return render(request, 'show-results.html', {'comics': data, 'title': title})
