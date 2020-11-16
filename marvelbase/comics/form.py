@@ -4,9 +4,15 @@ from django import forms
 
 
 class ComicInfo(forms.Form):
-    # title = forms.CharField(max_length=255, source=Comic.title)
-    # description = forms.TextField(source=Comic.description)
-    # thumbnail = forms.ImageField(source=Comic.thumbnail)
     title = forms.CharField(max_length=255)
     description = forms.CharField(max_length=1024)
     thumbnail = forms.ImageField()
+
+class ComicData(forms.Form):
+    title = forms.CharField(max_length=255)
+    description = forms.CharField(max_length=1024)
+    thumbnail = forms.ImageField()
+    date = forms.DateField()
+    pictures = forms.ImageField()
+    characters = forms.CharField(max_length=1024)
+    stories = forms.CharField(max_length=1024)

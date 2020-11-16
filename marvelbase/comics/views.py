@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
+from django.views import generic
+
 from .models import Comic
 from .form import ComicInfo
 import time
@@ -56,3 +58,6 @@ def show_results(request, title):
              })
 
     return render(request, 'show-results.html', {'comics': data, 'title': title})
+
+class ComicDetailView(generic.DetailView):
+    model = Comic
