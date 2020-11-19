@@ -1,13 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+</head>
+<body>
 
-{% extends "index.html" %}
 
+{% if title %}
+    <table>
+    <tr>
+        <td><b>Название комикса</b></td>
+        <td><b>Описание</b></td>
+        <td><b>Миниатюра</b></td>
+    </tr>
+    {% for title in comic %}
+        <tr>
+            <td> {{ comic.title }} </td>
+            <td> {{ comic.description }} </td>
+            <td> <img src ={{comic.thumbnail}}> </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endif %}
 
-{% block content %}
-  <h1>Title: {{ comic.title }}</h1>
+ <form method="POST" class="">{% csrf_token %}
+           {{ form.as_ul }}
+           <button type="submit" class="save btn btn-default">Save</button>
+       </form>
 
-  <p><strong>Author:</strong> <a href="">{{ comic.author }}</a></p> <!-- author detail link not yet defined -->
-  <p><strong>Description:</strong> {{ comic.description }}</p>
-  <p><strong>Date:</strong> {{ comic.date }}</p>
-
-
-{% endblock %}
+</body>
+</html>

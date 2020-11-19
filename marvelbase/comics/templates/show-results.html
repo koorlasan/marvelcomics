@@ -17,10 +17,9 @@
     </tr>
     {% for comic in comics %}
         <tr>
-            <td ><a href="{{ comic.get_absolute_url }}">{{ comic.title }}</a></td>
+            <td ><a href="{{ comic.title }}">{{ comic.title }}</a></td>
             <td> {{ comic.description }} </td>
             <td> <img src ={{comic.thumbnail}}> </td>
-
         </tr>
     {% endfor %}
     </table>
@@ -29,5 +28,3 @@
 
 </body>
 </html>
-<!--<td ><a href="{% url 'comic-info' comic.title %}">{{ comic.title }}</a></td>
-<!<td ><a href="{{ comic.get_absolute_url }}">{{ comic.title }}</a></td>

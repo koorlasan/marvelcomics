@@ -1,12 +1,13 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.views import generic
-
+from .form import ComicData
 from .models import Comic
 from .form import ComicInfo
 import time
 import hashlib
 import requests
+
 
 
 def index(request):
@@ -59,5 +60,11 @@ def show_results(request, title):
 
     return render(request, 'show-results.html', {'comics': data, 'title': title})
 
-class ComicDetailView(generic.DetailView):
-    model = Comic
+
+def comicinformation(request, pk):
+    title = ComicData.objects.get(pk=pk)
+    return render(request, 'comic-info.html', context=comicinformation())
+
+#class ComicDetailView(generic.DetailView):
+#    model = Comic
+
