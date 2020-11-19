@@ -17,17 +17,6 @@
     <input id="title" type="text" name="title" >
     <input type="submit" value="OK">
 </form>
-<div class="row">
-  <div class="col-sm-2">
-  {% block sidebar %}
-  <ul class="sidebar-nav">
-    <li><a href="{% url 'index' %}">Home</a></li>
-    <li><a href="{% url 'show-results' %}">Show results</a></li>
-    <li><a href="{% url 'comic-info' %}">Comic Info</a></li>
-  </ul>
-      {% endblock %}
-  </div>
-</div>
 
 </body>
 </html>
