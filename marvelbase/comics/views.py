@@ -61,9 +61,9 @@ def show_results(request, title):
     return render(request, 'show-results.html', {'comics': data, 'title': title})
 
 
-def comic_info(request, pk):
-    comic = ComicData.objects.get(pk=pk)
-    return render(request, 'comic-info.html', context=comic_info())
+def comic_info(request, title):
+    comic = ComicData.objects.get()
+    return render(request, 'comic-info.html', {'title': title})
 
 #class ComicDetailView(generic.DetailView):
 #    model = Comic
