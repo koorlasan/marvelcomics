@@ -61,7 +61,7 @@ def show_results(request, title):
     return render(request, 'show-results.html', {'comics': data, 'title': title})
 
 
-def comic_info(request, title):
+def comic_info(request, title): #не то
     comic = ComicData.objects.get()
     return render(request, 'comic-info.html', {'title': title})
 

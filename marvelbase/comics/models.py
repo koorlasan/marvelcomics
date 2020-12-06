@@ -1,15 +1,15 @@
 from django.db import models
 from django.urls import reverse
-
 from .filling import *
 import json
 from .apikey import *
 
 
-class Comic(models.Model):
+class Comic(models.Model):  # это выводится в панели администратора
     title = models.CharField(max_length=255)
     description = models.TextField()
     thumbnail = models.ImageField()
+    date = models.DateField()
 
 class ComicData(models.Model):
     title = models.CharField(max_length=255)
