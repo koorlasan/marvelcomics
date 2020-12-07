@@ -17,9 +17,9 @@
         <td><b>Описание</b></td>
         <td><b>Миниатюра</b></td>
     </tr>
-    {% for title from comic %}
+    {% for comic in comics %}
+        <h1> {{ title }} </h1>
         <tr>
-            <td> {{ comic.title }} </td>
             <td> {{ comic.description }} </td>
             <td> <img src ={{comic.thumbnail}}> </td>
 

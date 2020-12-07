@@ -7,9 +7,22 @@ from .form import ComicInfo
 import time
 import hashlib
 import requests
+import json
+
+def dbfill():
+    pass
 
 
-
+# def save_comic(request, comic):
+#    Comic.objects.get(name=title).save()	#    Comic.objects.get(name=title).save()
+#    return redirect('index')	#    return redirect('index')
+# def fill(request):
+#    if 'application/x-www-form-urlencoded' in request.META['CONTENT_TYPE']:
+#        print('hi')
+#        data = json.loads(request.body)
+#        title = data.get('title', None)
+#        ....................  # not sure how to save to database
+#    pass
 def index(request):
     if request.method == 'POST':
         title = request.POST['title']
@@ -31,9 +44,10 @@ def show_results(request, title):
     mystring = str(ts) + privatekey + publickey
     hash_object = hashlib.md5(mystring.encode())
     mygateway = f'https://gateway.marvel.com/v1/public/comics?orderBy=title&titleStartsWith={title}&format=comic&formatType=comic&ts={str(ts)}&apikey={publickey}&hash={hash_object.hexdigest()}'
+
     if request.method == 'POST':
         pass
-        # Здесь мы возможно будем сохранять комикс в БД
+
     else:
 
         # Дальше надо найти комиксы по названию "title"
@@ -60,11 +74,12 @@ def show_results(request, title):
 
     return render(request, 'show-results.html', {'comics': data, 'title': title})
 
+def comic_info(request):
+    if request.method == 'POST':
+        title = request.POST['title']
+        return HttpResponseRedirect(f'comic-info/{title}')
 
-def comic_info(request, title): #не то
-    comic = ComicData.objects.get()
-    return render(request, 'comic-info.html', {'title': title})
-
+    return render(request, 'comic-info.html')
 #class ComicDetailView(generic.DetailView):
 #    model = Comic
 

@@ -4,12 +4,22 @@ from .filling import *
 import json
 from .apikey import *
 
-
-class Comic(models.Model):  # это выводится в панели администратора
+# это выводится в панели администратора, надо регистрировать в admin.py
+class Comic(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
     thumbnail = models.ImageField()
     date = models.DateField()
+
+
+    def __unicode__(self):
+        return self.title
+
+
+    def get_absolute_url(self):
+        # см. подробности
+        # http://docs.djangoproject.com/en/dev/ref/models/instances/#django.db.models.permalink
+        return ('views.show_results', [str(self.title)])
 
 class ComicData(models.Model):
     title = models.CharField(max_length=255)
