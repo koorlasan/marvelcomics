@@ -54,19 +54,10 @@ def show_results(request, title):
 
          res = requests.get(mygateway).json()
          comics = res['data']['results']
-         data = [{
-            'title': '',
-            'description': '',
-            'thumbnail': '',
-        },
-            {
-                'title': '',
-                'description': '',
-                'thumbnail': '',
-            },
-        ]
-         for com in comics:
+         data = []
+         for i, com in enumerate(comics):
              data.append({
+                 'id': i,
                  'title': com['title'],
                  'description': com['description'],
                  'thumbnail': com['thumbnail']['path']+'/portrait_xlarge.'+com['thumbnail']['extension'],
@@ -74,7 +65,7 @@ def show_results(request, title):
 
     return render(request, 'show-results.html', {'comics': data, 'title': title})
 
-def comic_info(request):
+def comic_info(request, id):
     if request.method == 'POST':
         title = request.POST['title']
         return HttpResponseRedirect(f'comic-info/{title}')
