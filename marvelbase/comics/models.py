@@ -17,9 +17,7 @@ class Comic(models.Model):
 
 
     def get_absolute_url(self):
-        # см. подробности
-        # http://docs.djangoproject.com/en/dev/ref/models/instances/#django.db.models.permalink
-        return ('views.show_results', [str(self.title)])
+         return ('views.show_results', [str(self.title)])
 
 class ComicData(models.Model):
     title = models.CharField(max_length=255)
