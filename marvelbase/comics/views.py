@@ -71,6 +71,5 @@ def comic_info(request, id):
         return HttpResponseRedirect(f'comic-info/{title}')
 
     return render(request, 'comic-info.html')
-#class ComicDetailView(generic.DetailView):
-#    model = Comic
+
 
