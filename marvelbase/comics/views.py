@@ -57,7 +57,7 @@ def show_results(request, title):
          data = []
          for i, com in enumerate(comics):
              data.append({
-                 'id' : i,
+                 'id': i,
                  'title': com['title'],
                  'description': com['description'],
                  'thumbnail': com['thumbnail']['path']+'/portrait_xlarge.'+com['thumbnail']['extension'],
@@ -69,6 +69,7 @@ def comic_info(request, id):
     if request.method == 'POST':
         title = request.POST['title']
         return HttpResponseRedirect(f'comic-info/{title}')
+
     return render(request, 'comic-info.html')
 #class ComicDetailView(generic.DetailView):
 #    model = Comic
