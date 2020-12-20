@@ -10,15 +10,15 @@
 <body>
 
 
-{% if comic.id in comics %}
+{% if comics %}
     <table>
     <tr>
         <td><b>Название </b></td>
         <td><b>Описание</b></td>
         <td><b>Миниатюра</b></td>
     </tr>
-    {% for comic in comics %}
-        <h1> {{ comic.title }} </h1>
+    {% for comic.id in comics %}
+        <h1> {{ comic.id }} </h1>
         <tr>
             <td> {{ comic.description }} </td>
             <td> <img src ={{comic.thumbnail}}> </td>

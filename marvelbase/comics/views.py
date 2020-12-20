@@ -36,7 +36,6 @@ def index(request):
 # def save_comic(request, comic):
 #    Comic.objects.get(name=title).save()
 #    return redirect('index')
-
 def show_results(request, title):
     publickey = "058789c458e2a5c666c1878c07fdc37b"
     privatekey = "277608909782d353e372ac535074386bdb3d8815"
@@ -56,20 +55,24 @@ def show_results(request, title):
          comics = res['data']['results']
          data = []
          for i, com in enumerate(comics):
+             #new_comic = json.dumps(data)
              data.append({
                  'id': i,
                  'title': com['title'],
                  'description': com['description'],
                  'thumbnail': com['thumbnail']['path']+'/portrait_xlarge.'+com['thumbnail']['extension'],
              })
-
+             with open('comic-information.json', 'w') as file:
+                 json.dump(data, file, indent=2)
     return render(request, 'show-results.html', {'comics': data, 'title': title})
 
-def comic_info(request, id):
-    if request.method == 'POST':
-        title = request.POST['title']
-        return HttpResponseRedirect(f'comic-info/{title}')
 
-    return render(request, 'comic-info.html')
+def comic_info(request, id):
+        for id in show_results:
+            json.load(open('comic-information.json'))
+        if request.method == 'POST':
+            id = request.POST['title']
+            return HttpResponseRedirect(f'comic-info/{id}')
+        return render(request, 'comic-info.html')
 
 
