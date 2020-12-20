@@ -9,6 +9,7 @@ import hashlib
 import requests
 import json
 
+
 def dbfill():
     pass
 
@@ -29,9 +30,10 @@ def index(request):
         return HttpResponseRedirect(f'show-results/{title}')
 
     return render(
-       request,
-       'index.html',
-   )
+        request,
+        'index.html',
+    )
+
 
 # def save_comic(request, comic):
 #    Comic.objects.get(name=title).save()
@@ -51,28 +53,32 @@ def show_results(request, title):
 
         # Дальше надо найти комиксы по названию "title"
 
-         res = requests.get(mygateway).json()
-         comics = res['data']['results']
-         data = []
-         for i, com in enumerate(comics):
-             #new_comic = json.dumps(data)
-             data.append({
-                 'id': i,
-                 'title': com['title'],
-                 'description': com['description'],
-                 'thumbnail': com['thumbnail']['path']+'/portrait_xlarge.'+com['thumbnail']['extension'],
-             })
-             with open('comic-information.json', 'w') as file:
-                 json.dump(data, file, indent=2)
+        res = requests.get(mygateway).json()
+        comics = res['data']['results']
+        data = []
+        for i, com in enumerate(comics):
+            # new_comic = json.dumps(data)
+            data.append({
+                'id': i,
+                'title': com['title'],
+                'description': com['description'],
+                'thumbnail': com['thumbnail']['path'] + '/portrait_xlarge.' + com['thumbnail']['extension'],
+                'variants': com['variants'],
+                'ean': com['ean'],
+                'dates': com['dates'],
+            })
+            with open('comic-information.json', 'w') as file:
+                json.dump(data, file, indent=2)
     return render(request, 'show-results.html', {'comics': data, 'title': title})
 
 
 def comic_info(request, id):
-        for id in show_results:
-            json.load(open('comic-information.json'))
-        if request.method == 'POST':
-            id = request.POST['title']
-            return HttpResponseRedirect(f'comic-info/{id}')
-        return render(request, 'comic-info.html')
+    new_comic = json.load(open('comic-information.json'))
+    for one_comic in new_comic:
+        if one_comic['id']:
+            return render(request, 'comic-info.html', {'infocomic': new_comic,'id': id})
 
-
+# if request.method == 'POST':
+#     id = request.POST['title']
+#     return HttpResponseRedirect(f'comic-info/{id}')
+# return render(request, 'comic-info.html')

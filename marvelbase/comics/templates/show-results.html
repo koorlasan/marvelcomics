@@ -6,7 +6,9 @@
     <title>Search results</title>
 </head>
 <body>
-
+  <ul class="sidebar-nav">
+    <li><a href="{% url 'index' %}">Home</a></li>
+  </ul>
 <H3>Search results for "{{ title }}": </H3>
 
 {% if comics %}

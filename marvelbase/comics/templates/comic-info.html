@@ -8,21 +8,22 @@
     <title>Information about comic</title>
 </head>
 <body>
+  <ul class="sidebar-nav">
+    <li><a href="{% url 'index' %}">Home</a></li>
+  </ul>
 
-
-{% if comics %}
+{% if infocomic %}
     <table>
     <tr>
         <td><b>Название </b></td>
         <td><b>Описание</b></td>
         <td><b>Миниатюра</b></td>
     </tr>
-    {% for comic.id in comics %}
-        <h1> {{ comic.id }} </h1>
+    {% for comic_detail in infocomic %}
         <tr>
-            <td> {{ comic.description }} </td>
-            <td> <img src ={{comic.thumbnail}}> </td>
-
+            <td> {{ comic_detail.title }} </td>
+            <td> {{ comic_detail.description }} </td>
+            <td> <img src ={{comic_detail.thumbnail}}> </td>
         </tr>
     {% endfor %}
     </table>
