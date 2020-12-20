@@ -76,7 +76,7 @@ def comic_info(request, id):
     new_comic = json.load(open('comic-information.json'))
     for one_comic in new_comic:
         if one_comic['id']:
-            return render(request, 'comic-info.html', {'infocomic': new_comic,'id': id})
+            return render(request, 'comic-info.html', {'id': id, 'infocomic': new_comic})
 
 # if request.method == 'POST':
 #     id = request.POST['title']
