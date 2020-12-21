@@ -57,7 +57,6 @@ def show_results(request, title):
         comics = res['data']['results']
         data = []
         for i, com in enumerate(comics):
-            # new_comic = json.dumps(data)
             data.append({
                 'id': i,
                 'title': com['title'],
@@ -78,7 +77,3 @@ def comic_info(request, id):
         if one_comic['id']:
             return render(request, 'comic-info.html', {'id': id, 'infocomic': new_comic})
 
-# if request.method == 'POST':
-#     id = request.POST['title']
-#     return HttpResponseRedirect(f'comic-info/{id}')
-# return render(request, 'comic-info.html')
