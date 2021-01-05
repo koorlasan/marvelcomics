@@ -74,6 +74,7 @@ def show_results(request, title):
 def comic_info(request, id):
     new_comic = json.load(open('comic-information.json'))
     for one_comic in new_comic:
-        if one_comic['id']:
+        if one_comic['id']: # эквивалентно one_comic['id'] != 0
+            # в 'infocomic' надо передать отдельный комикс, а не весь список
             return render(request, 'comic-info.html', {'id': id, 'infocomic': new_comic})
 
