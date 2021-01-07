@@ -13,22 +13,20 @@
   </ul>
 <H3>Search results for "{{ id }}": </H3>
 
-{% for id in infocomic %}
+   {% if id %}
         <table>
         <tr>
             <td><b>Название </b></td>
             <td><b>Описание</b></td>
             <td><b>Миниатюра</b></td>
         </tr>
-            {% for comic_detail in infocomic %}
-                <tr>
-                    <td> {{ comic_detail.title }} </td>
-                    <td> {{ comic_detail.description }} </td>
-                    <td> <img src = {{comic_detail.thumbnail}}> </td>
-                </tr>
-            {% endfor %}
+            <tr>
+                <td> {{ infocomic.title }} </td>
+                <td> {{ infocomic.description }} </td>
+                <td> <img src = {{infocomic.thumbnail}}> </td>
+            </tr>
         </table>
-{% endfor %}
+   {% endif %}
 
  <form method="POST" class="">{% csrf_token %}
            {{ form.as_ul }}

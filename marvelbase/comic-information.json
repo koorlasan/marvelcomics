@@ -1,15 +1,15 @@
 [
   {
     "id": 0,
-    "title": "Captain America (1968) #255",
+    "title": "Daredevil (1964) #183",
     "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/c/60/4bb6ee4c6f109/portrait_xlarge.jpg",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/5/70/4bb6eb3026420/portrait_xlarge.jpg",
     "variants": [],
     "ean": "",
     "dates": [
       {
         "type": "onsaleDate",
-        "date": "1981-03-01T00:00:00-0500"
+        "date": "1982-06-01T00:00:00-0400"
       },
       {
         "type": "focDate",
@@ -21,56 +21,21 @@
       },
       {
         "type": "digitalPurchaseDate",
-        "date": "2014-04-29T00:00:00-0400"
+        "date": "2014-02-25T00:00:00-0500"
       }
     ]
   },
   {
     "id": 1,
-    "title": "Captain America (2012) #12",
-    "description": "LOOSE NUKE PART 2\r\n\r\n\r\n\r\n\r\n<ul><li>Nuke on a rampage!</li><li>The Weapon Minus program revealed!</li><li>Meet Dr. Mindbubble, the unbelievable Super Soldier created in the 1960s!</li></ul>",
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/3/00/5249a1a5b4580/portrait_xlarge.jpg",
-    "variants": [
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/48193",
-        "name": "Captain America (2012) #12 (Castellani Lego Variant)"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/49469",
-        "name": "Captain America (2012) #12 (Castellani Lego Sketch Variant)"
-      }
-    ],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "2013-10-09T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "2013-09-25T00:00:00-0400"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2014-04-07T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2013-10-09T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Captain America (2002) #5",
+    "title": "Daredevil (1964) #68",
     "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/5bc4f5b9a3955/portrait_xlarge.jpg",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/6/00/5b43c23e1643f/portrait_xlarge.jpg",
     "variants": [],
     "ean": "",
     "dates": [
       {
         "type": "onsaleDate",
-        "date": "2002-10-09T00:00:00-0400"
+        "date": "1970-09-01T00:00:00-0400"
       },
       {
         "type": "focDate",
@@ -78,25 +43,327 @@
       },
       {
         "type": "unlimitedDate",
-        "date": "2008-02-12T00:00:00-0500"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-02-11T00:00:00-0500"
+        "date": "2016-03-07T00:00:00-0500"
       }
     ]
   },
   {
-    "id": 3,
-    "title": "Captain America (1996) #10",
-    "description": "Captain America leads a squad of elite SHIELD agents against The Sons Of The Serpent! Meanwhile, Falcon stakes out a Serpent hideout. Plus, The Serpent King's identity is revealed!\n",
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc34c4a47efc/portrait_xlarge.jpg",
+    "id": 2,
+    "title": "Daredevil (2015) #18",
+    "description": "The final chapter in the Autobiography of Matt Murdock is written by someone who may surprise you. Not everyone survives this phase in Daredevil's life. Find out who lives, who dies...and who is changed forever.",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/b/e0/58c1d20eba36e/portrait_xlarge.jpg",
     "variants": [],
     "ean": "",
     "dates": [
       {
         "type": "onsaleDate",
-        "date": "1997-08-10T00:00:00-0400"
+        "date": "2017-03-15T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "2017-02-20T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2017-09-18T00:00:00-0400"
+      },
+      {
+        "type": "digitalPurchaseDate",
+        "date": "2017-03-15T00:00:00-0400"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Daredevil (1998) #47",
+    "description": "HARDCORE PART 2 Follow Wilson Fisk as he consolidates power in the criminal underworld. After Fisk has accomplished what he sets out to do, will Daredevil be enough to stop him?",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/d/e0/572781f025585/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "2003-07-01T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2008-10-06T00:00:00-0400"
+      },
+      {
+        "type": "digitalPurchaseDate",
+        "date": "2012-01-10T00:00:00-0500"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Daredevil (1964) #266",
+    "description": null,
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/6/60/5b5240276fe4e/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1989-05-01T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2015-04-20T00:00:00-0400"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Daredevil (1964) #198",
+    "description": null,
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/7/70/5c9a277a4998e/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1983-09-01T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Daredevil (1964) #82",
+    "description": null,
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/5/e0/5b44d3723d60a/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1971-12-01T00:00:00-0500"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2016-03-07T00:00:00-0500"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Daredevil (2015) #600",
+    "description": "AN OVERSIZED ANNIVERSARY ISSUE, BRINGING YOU THE CLIMAX OF \"MAYOR FISK\"! Daredevil can see the new mayor\u2019s machinations coming together\u2026but is he in time to stop them? Guest-starring both the heroes and villains of the New York City streets\u2026this huge issue has a surprise ending that will shake the city to its very core! Plus: a look at Foggy & Matt\u2019s relationship over the years!",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/6/20/5ab2ab6155991/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "2018-03-28T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "2018-03-05T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2018-10-01T00:00:00-0400"
+      },
+      {
+        "type": "digitalPurchaseDate",
+        "date": "2018-03-28T00:00:00-0400"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Daredevil (1998) #103",
+    "description": "WITHOUT FEAR PART 4 Daredevil tears Hell's Kitchen apart searching for Mr. Fear, the only man who can stop his wife from going insane, while the Hood's minions fight Fear's people for control of the neighborhood.",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/4/80/5751897d7b82f/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "2007-12-28T00:00:00-0500"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2008-10-01T00:00:00-0400"
+      },
+      {
+        "type": "digitalPurchaseDate",
+        "date": "2011-01-04T00:00:00-0500"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Daredevil (1964) #280",
+    "description": "TRAPPED IN HELL! Mephisto has ensnared Daredevil and his friends, where they must each face their greatest inner challenges!",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/8/e0/59bc165cb230d/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1990-05-10T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2017-09-18T00:00:00-0400"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Daredevil (1964) #211",
+    "description": null,
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/6/30/5c9a32670b27c/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1984-10-01T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Daredevil (1964) #97",
+    "description": "Rise of the Dark Messiah! When Daredevil saved a street performer from an attack, he never anticipated that the young man would become his greatest adversary. And with Black Widow out of commission, Daredevil must face Dark Messiah solo!",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/7/70/5b46576fb788d/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1973-03-10T00:00:00-0500"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2018-07-16T00:00:00-0400"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Daredevil (2019) #2",
+    "description": null,
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/c/60/5c6dda69ad541/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "2019-02-27T00:00:00-0500"
+      },
+      {
+        "type": "focDate",
+        "date": "2019-02-04T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2019-09-02T00:00:00-0400"
+      },
+      {
+        "type": "digitalPurchaseDate",
+        "date": "2019-02-27T00:00:00-0500"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Daredevil (1998) #115",
+    "description": "It's a non-stop kung-fu extravaganza, as Daredevil faces Lady Bullseye and the Hand - and confronts one of the toughest decisions of his life!",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/f/a0/572d12016b083/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "2009-01-28T00:00:00-0500"
+      },
+      {
+        "type": "focDate",
+        "date": "2009-01-08T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2011-06-30T00:00:00-0400"
+      },
+      {
+        "type": "digitalPurchaseDate",
+        "date": "2012-06-12T00:00:00-0400"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Daredevil (1964) #295",
+    "description": null,
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/f/50/5fb57c3bd4a8b/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1991-08-01T00:00:00-0400"
+      },
+      {
+        "type": "focDate",
+        "date": "-0001-11-30T00:00:00-0500"
+      },
+      {
+        "type": "unlimitedDate",
+        "date": "2020-11-19T00:00:00-0500"
+      },
+      {
+        "type": "digitalPurchaseDate",
+        "date": "2020-11-18T00:00:00-0500"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Daredevil (1964) #226",
+    "description": null,
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/a/20/4bc479a96b76e/portrait_xlarge.jpg",
+    "variants": [],
+    "ean": "",
+    "dates": [
+      {
+        "type": "onsaleDate",
+        "date": "1986-01-01T00:00:00-0500"
       },
       {
         "type": "focDate",
@@ -108,445 +375,118 @@
       },
       {
         "type": "digitalPurchaseDate",
-        "date": "2011-12-20T00:00:00-0500"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "title": "Captain America (1968) #271",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/3/30/51f94d19011a8/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "1982-07-01T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2013-06-24T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-05-06T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "title": "Captain America (2012) #23",
-    "description": "The Tomorrow Soldier part 2\n- Zola has waged war on New York!\n- Without a Captain America to lead them, can the Avengers stop the Bio-Fanatic's plot for revenge?!\n- The Falcon faces a dark secret form Captain America's past!",
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/53dfb45d492a3/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "2014-08-13T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "2014-07-21T00:00:00-0400"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2015-02-09T00:00:00-0500"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-08-13T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Captain America (1968) #111",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/9/30/56e31e66d11fa/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "1969-03-01T00:00:00-0500"
-      },
-      {
-        "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2008-09-17T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-03-18T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "title": "Captain America (2011) #3 (Architect Variant)",
-    "description": "",
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/d/30/4e78bf5d7bc67/portrait_xlarge.jpg",
-    "variants": [
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41311",
-        "name": "Captain America (2011) #3 (Architect Sketch Variant)"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38388",
-        "name": "Captain America (2011) #3"
-      }
-    ],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "2011-09-21T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "2011-08-29T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "title": "Captain America (1968) #287",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/6/00/59a051220eb9f/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "1983-11-01T00:00:00-0500"
-      },
-      {
-        "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2013-05-13T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-05-06T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "title": "Captain America (2018) #1",
-    "description": "IT IS WINTER IN AMERICA.For over 70 years, he has stood in stalwart defense of our country and its people. But in the aftermath of Hydra\u2019s takeover of the nation, Captain America is a figure of controversy, carrying a tarnished shield\u2026and a new enemy is rising! Who are the Power Elite? And how do they intend to co-opt and corrupt the symbol that is Captain America?",
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/8/f0/5b34089da2eb1/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "2018-07-04T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "2018-06-11T00:00:00-0400"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2019-01-07T00:00:00-0500"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2018-07-04T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "title": "Captain America (1968) #127",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/56e321e8c2a5f/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "1970-07-01T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2011-06-08T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-03-25T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "title": "Captain America (2011) #1 (2nd Printing Variant)",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/b/90/4e6a4b014daf2/portrait_xlarge.jpg",
-    "variants": [
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/38382",
-        "name": "Captain America (2011) #1"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/39338",
-        "name": "Captain America (2011) #1 (Movie Variant)"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/39339",
-        "name": "Captain America (2011) #1 (John Romita Sr. Variant)"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/39336",
-        "name": "Captain America (2011) #1 (Adams Variant)"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/40076",
-        "name": "Captain America (2011) #1 (Coipel Variant)"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/41378",
-        "name": "Captain America (2011) #1 (Singapore Variant)"
-      },
-      {
-        "resourceURI": "http://gateway.marvel.com/v1/public/comics/39337",
-        "name": "Captain America (2011) #1 (Blank Cover Variant)"
-      }
-    ],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "2011-09-14T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "2011-08-30T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "title": "Captain America (1968) #303",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/3/00/51fad21467523/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "1985-03-01T00:00:00-0500"
-      },
-      {
-        "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2013-07-22T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-05-13T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "title": "Captain America (1968) #143",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/3/a0/56e32b193a677/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "1971-11-01T00:00:00-0500"
-      },
-      {
-        "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2013-03-25T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-04-01T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "title": "Captain America (2004) #8",
-    "description": "The questions plaguing Captain America's dreams and memories have been answered in the most brutal way possible. And in the wake of this brutality, General Lukin makes his first all-out assault!",
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/2/e0/5140b932ac375/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "2005-07-20T00:00:00-0400"
-      },
-      {
-        "type": "focDate",
-        "date": "1961-01-01T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2014-02-27T09:13:36-0500"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2010-04-01T00:00:00-0400"
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "title": "Captain America (1968) #394",
-    "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/5294f4dc725a2/portrait_xlarge.jpg",
-    "variants": [],
-    "ean": "",
-    "dates": [
-      {
-        "type": "onsaleDate",
-        "date": "1991-11-01T00:00:00-0500"
-      },
-      {
-        "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2013-08-05T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-06-10T00:00:00-0400"
+        "date": "2013-11-19T00:00:00-0500"
       }
     ]
   },
   {
     "id": 16,
-    "title": "Captain America (1968) #319",
+    "title": "Daredevil (2011) #7 (Mc 50th Anniversary Variant)",
     "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/f/a0/56e6d2cee63fa/portrait_xlarge.jpg",
-    "variants": [],
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/c/40/4e7b43fa77ab2/portrait_xlarge.jpg",
+    "variants": [
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/36514",
+        "name": "Daredevil (2011) #7"
+      }
+    ],
     "ean": "",
     "dates": [
       {
         "type": "onsaleDate",
-        "date": "1986-07-01T00:00:00-0400"
+        "date": "2011-12-21T00:00:00-0500"
       },
       {
         "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2013-05-20T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-05-20T00:00:00-0400"
+        "date": "2011-12-07T00:00:00-0500"
       }
     ]
   },
   {
     "id": 17,
-    "title": "Captain America (1968) #159",
+    "title": "Daredevil (2019) #14",
     "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/3/30/56e334ee16142/portrait_xlarge.jpg",
-    "variants": [],
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/6/10/5ddc134c15267/portrait_xlarge.jpg",
+    "variants": [
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/83271",
+        "name": "Daredevil (2019) #14 (Variant)"
+      }
+    ],
     "ean": "",
     "dates": [
       {
         "type": "onsaleDate",
-        "date": "1973-03-01T00:00:00-0500"
+        "date": "2019-12-04T00:00:00-0500"
       },
       {
         "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
+        "date": "2019-11-04T00:00:00-0500"
       },
       {
         "type": "unlimitedDate",
-        "date": "2013-04-29T00:00:00-0400"
+        "date": "2020-06-08T00:00:00-0400"
       },
       {
         "type": "digitalPurchaseDate",
-        "date": "2014-04-01T00:00:00-0400"
+        "date": "2019-12-04T00:00:00-0500"
       }
     ]
   },
   {
     "id": 18,
-    "title": "Captain America (2004) #24",
-    "description": "CIVIL WAR tie-in!  In the midst of the Civil War, Cap faces his worst fears, as friends desert his cause, and comrades in arms lie dead or wounded. And among all this, the Red Skull begins to make his moves, with a few startling comrades of his own this time.",
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/4/e0/56f990d564e99/portrait_xlarge.jpg",
-    "variants": [],
+    "title": "Daredevil (1998) #500 (70TH FRAME VARIANT)",
+    "description": "This is it! The 500th issue of DAREDEVIL! What is the Kingpin's true plan? What do he and Lady Bullseye have in common? What will Matt Murdock do to make things right again? And just how will Ed Brubaker and Michael Lark leave this story for the next creative team to pick it up? Don't miss the twists and surprises that will have everybody talking! An all-star anniversary issue featuring new stories by Ann Nocenti, David Aja, and others!\r\nNew and Reprint/Rated T  ...$4.99",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/c/20/4bb3fda90b943/portrait_xlarge.jpg",
+    "variants": [
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/29819",
+        "name": "Daredevil (1998) #500 (2ND PRINTING VARIANT)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/28196",
+        "name": "Daredevil (1998) #500 (DELL OTTO VARIANT)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/24757",
+        "name": "Daredevil (1998) #500"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/28127",
+        "name": "Daredevil (1998) #500 (ROSS COVER)"
+      },
+      {
+        "resourceURI": "http://gateway.marvel.com/v1/public/comics/28195",
+        "name": "Daredevil (1998) #500 (DARROW VARIANT)"
+      }
+    ],
     "ean": "",
     "dates": [
       {
         "type": "onsaleDate",
-        "date": "2006-11-29T00:00:00-0500"
+        "date": "2009-08-19T00:00:00-0400"
       },
       {
         "type": "focDate",
-        "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2009-09-29T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2009-10-30T00:00:00-0400"
+        "date": "2009-07-30T00:00:00-0400"
       }
     ]
   },
   {
     "id": 19,
-    "title": "Captain America (1968) #410",
+    "title": "Daredevil (1964) #309",
     "description": null,
-    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/4/00/5294ed17e1695/portrait_xlarge.jpg",
+    "thumbnail": "http://i.annihil.us/u/prod/marvel/i/mg/7/30/5c9e837b57d71/portrait_xlarge.jpg",
     "variants": [],
     "ean": "",
     "dates": [
       {
         "type": "onsaleDate",
-        "date": "1992-12-01T00:00:00-0500"
+        "date": "1992-10-01T00:00:00-0400"
       },
       {
         "type": "focDate",
         "date": "-0001-11-30T00:00:00-0500"
-      },
-      {
-        "type": "unlimitedDate",
-        "date": "2013-08-12T00:00:00-0400"
-      },
-      {
-        "type": "digitalPurchaseDate",
-        "date": "2014-06-10T00:00:00-0400"
       }
     ]
   }
