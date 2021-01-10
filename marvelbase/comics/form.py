@@ -1,18 +1,24 @@
 from django.forms import ModelForm, TextInput
-from .models import Comic
+from .models import ComicData, Comic
 from django import forms
 
 
-class ComicInfo(forms.Form):
+class ComicInfoForm(forms.Form):
+    class Meta:
+        model = Comic
     title = forms.CharField(max_length=255)
     description = forms.CharField(max_length=1024)
     thumbnail = forms.ImageField()
 
-class ComicData(forms.Form):
+class ComicDataForm(forms.Form):
+    class Meta:
+        model = ComicData
     title = forms.CharField(max_length=255)
     description = forms.CharField(max_length=1024)
     thumbnail = forms.ImageField()
-    date = forms.DateField()
+    variants = forms.CharField(max_length=1024)
+    ean = forms.CharField(max_length=1024)
+    dates = forms.DateField()
     pictures = forms.ImageField()
     characters = forms.CharField(max_length=1024)
     stories = forms.CharField(max_length=1024)

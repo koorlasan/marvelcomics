@@ -1,9 +1,8 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.views import generic
-from .form import ComicData
-from .models import Comic
-from .form import ComicInfo
+from .form import ComicDataForm, ComicInfoForm
+from .models import ComicData
 import time
 import hashlib
 import requests
@@ -14,16 +13,6 @@ def dbfill():
     pass
 
 
-# def save_comic(request, comic):
-#    Comic.objects.get(name=title).save()	#    Comic.objects.get(name=title).save()
-#    return redirect('index')	#    return redirect('index')
-# def fill(request):
-#    if 'application/x-www-form-urlencoded' in request.META['CONTENT_TYPE']:
-#        print('hi')
-#        data = json.loads(request.body)
-#        title = data.get('title', None)
-#        ....................  # not sure how to save to database
-#    pass
 def index(request):
     if request.method == 'POST':
         title = request.POST['title']
@@ -35,9 +24,6 @@ def index(request):
     )
 
 
-# def save_comic(request, comic):
-#    Comic.objects.get(name=title).save()
-#    return redirect('index')
 def show_results(request, title):
     publickey = "058789c458e2a5c666c1878c07fdc37b"
     privatekey = "277608909782d353e372ac535074386bdb3d8815"
@@ -50,12 +36,10 @@ def show_results(request, title):
         pass
 
     else:
-
-        # Дальше надо найти комиксы по названию "title"
-
         res = requests.get(mygateway).json()
         comics = res['data']['results']
         data = []
+
         for i, com in enumerate(comics):
             data.append({
                 'id': i,
@@ -72,13 +56,21 @@ def show_results(request, title):
 
 
 def comic_info(request, id):
-    new_comic = json.load(open('comic-information.json'))
-    for one_comic in new_comic:
-        if one_comic['id'] >= 0 & one_comic['id'] < len(new_comic):  # эквивалентно one_comic['id'] != 0
-             return render(request, 'comic-info.html', {'id': id, 'infocomic': new_comic[id]})  #передача отдельного комикса
+        all_comics = json.load(open('comic-information.json'))
+        for one_comic in all_comics:
+            if one_comic['id'] >= 0 & one_comic['id'] < len(all_comics):  # здесь что-то не то...
+                with open('one-comic-info.json', 'w') as file2:
+                    json.dump(all_comics[id], file2, indent=2)
+                if request.method == "POST":
+                    save_comic = json.load(open('one-comic-info.json'))
+                    dbcomic = ComicData(request.POST)
+                    #(title=save_comic['title'],description=save_comic['description'], thumbnail=save_comic['thumbnail'], variants=save_comic['variants'], ean=save_comic['ean'], dates=save_comic['dates'])
+                    dbcomic.title = save_comic['title']
+                    dbcomic.description = save_comic['description']
+                    dbcomic.thumbnail = save_comic['thumbnail']
+                    dbcomic.variants = save_comic['variants']
+                    dbcomic.ean = save_comic['ean']
+                    dbcomic.dates = save_comic['dates']
+                    dbcomic.save()
 
-
-#with open('one-comic-information.json', 'w') as file2:
-#    json.dump(new_comic[id], file2, indent=2)
-#    one_comic = json.load(
-#        open('one-comic-information.json'))  # в 'infocomic' надо передать отдельный комикс, а не весь список
+            return render(request, 'comic-info.html', {'id': id, 'infocomic': all_comics[id]})
