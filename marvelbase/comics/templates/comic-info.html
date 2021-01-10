@@ -5,15 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Information about comic</title>
+    <title>Information about {{ infocomic.title }}</title>
 </head>
 <body>
   <ul class="sidebar-nav">
     <li><a href="{% url 'index' %}">Home</a></li>
   </ul>
-<H3>Search results for "{{ id }}": </H3>
+<H3>Search results for {{ infocomic.title }}: </H3>
 
-   {% if id %}
         <table>
         <tr>
             <td><b>Название </b></td>
@@ -26,12 +25,11 @@
                 <td> <img src = {{infocomic.thumbnail}}> </td>
             </tr>
         </table>
-   {% endif %}
 
- <form method="POST" class="">{% csrf_token %}
-           {{ form.as_ul }}
-           <button type="submit" class="save btn btn-default">Save</button>
-       </form>
+ <form method="POST" class="">
+     {% csrf_token %}
+     <button type="submit" class="save btn btn-default">Save</button>
+ </form>
 
 </body>
 </html>
