@@ -12,15 +12,15 @@ class Comic(models.Model):
     date = models.DateField()
 
 class ComicData(models.Model):
-    title = models.CharField(max_length=1024)
-    description = models.TextField()
-    thumbnail = models.ImageField()
-    variants = models.TextField()
-    ean = models.TextField()
-    dates = models.DateField()
-    pictures = models.ImageField()
-    characters = models.TextField()
-    stories = models.TextField()
+    title = models.CharField(max_length=1024, default=None)
+    description = models.TextField(null=True, default=None)
+    thumbnail = models.ImageField(null=True, default=None)
+  #  variants = models.TextField()
+  #  ean = models.TextField()
+    dates = models.DateField(null=True, default=None)
+ #    pictures = models.ImageField()
+ #    characters = models.TextField()
+ #    stories = models.TextField()
 
 
 
