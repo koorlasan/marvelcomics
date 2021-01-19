@@ -75,3 +75,21 @@ def my_comics(request):
     return render(request, "my-comics.html", {"my_comic": my_comic})
 
 
+def edit(request, id):
+    edit_comic = ComicData.objects.get(id=id)
+    if request.method == "POST":
+        edit_comic.title = request.POST.get("title")
+        edit_comic.description = request.POST.get("description")
+        edit_comic.thumbnail = request.POST.get("thumbnail")
+        edit_comic.dates = request.POST.get("dates")
+        edit_comic.save()
+        return HttpResponseRedirect("/")
+    else:
+        return render(request, "edit-comic.html", {"edit_comic": edit_comic})
+
+
+def delete(request, id):
+    del_comic = ComicData.objects.get(id=id)
+    del_comic.delete()
+    return HttpResponseRedirect("my-comics/")
+
