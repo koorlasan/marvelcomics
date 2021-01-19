@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
+from django.http import HttpResponseNotFound
 from django.views import generic
 from .form import ComicDataForm, ComicInfoForm
 from .models import ComicData
@@ -62,13 +63,15 @@ def comic_info(request, id):
                 json.dump(all_comics[id], file2, indent=2)
             if request.method == "POST":
                 save_comic = json.load(open('one-comic-info.json'))
-                dbcomic = ComicData(request.POST)
-                #(title=save_comic['title'],description=save_comic['description'], thumbnail=save_comic['thumbnail'], variants=save_comic['variants'], ean=save_comic['ean'], dates=save_comic['dates'])
-                dbcomic.title = save_comic['title']
-                dbcomic.description = save_comic['description']
-                dbcomic.thumbnail = save_comic['thumbnail']
-                dbcomic.variants = save_comic['variants']
-                dbcomic.ean = save_comic['ean']
-                dbcomic.dates = save_comic['dates']
+                dbcomic = ComicData(title=save_comic['title'], description=save_comic['description'], thumbnail=save_comic['thumbnail'], dates = (save_comic['dates'][0]['date'])[slice(0, 9)])
+                dbcomic.dates = save_comic['dates'][0]['date']
+                dbcomic.dates = dbcomic.dates[:10]
                 dbcomic.save()
         return render(request, 'comic-info.html', {'id': id, 'infocomic': all_comics[id]})
+
+
+def my_comics(request):
+    my_comic = ComicData.objects.all()
+    return render(request, "my-comics.html", {"my_comic": my_comic})
+
+

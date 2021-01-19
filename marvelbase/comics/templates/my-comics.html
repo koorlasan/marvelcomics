@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Мои сохраненные комиксы</title>
+</head>
+<body>
+  <ul class="sidebar-nav">
+    <li><a href="{% url 'index' %}">Home</a></li>
+  </ul>
+    {% if my_comic %}
+    <table>
+        <tr>
+            <th>Название</th>
+            <th>Описание</th>
+            <th>Обложка</th>
+            <th>Дата выхода</th>
+        </tr>
+        {% for one_comic in my_comic %}
+        <tr>
+            <td> {{ one_comic.title }} </td>
+            <td> {{ one_comic.description }} </td>
+            <td> <img src ={{one_comic.thumbnail}}> </td>
+            <td> {{ one_comic.dates }} </td>
+            <td><a href="edit/">Изменить</a> | <a href="delete/">Удалить</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+</body>
+</html>
