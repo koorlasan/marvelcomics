@@ -25,7 +25,7 @@
             <td> {{ one_comic.description }} </td>
             <td> <img src ={{one_comic.thumbnail}}> </td>
             <td> {{ one_comic.dates }} </td>
-            <td><a href="edit/">Изменить</a> | <a href="delete/">Удалить</a></td>
+            <td><a href="{% url 'edit' one_comic.id %}">Изменить</a> | <a href="{% url 'delete' one_comic.id%}">Удалить</a></td>
         </tr>
         {% endfor %}
     </table>

@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.http import HttpResponseNotFound
 from django.views import generic
-from .form import ComicDataForm, ComicInfoForm
+from .form import ComicDataForm
 from .models import ComicData
 import time
 import hashlib
@@ -84,12 +84,11 @@ def edit(request, id):
         edit_comic.dates = request.POST.get("dates")
         edit_comic.save()
         return HttpResponseRedirect("/")
-    else:
-        return render(request, "edit-comic.html", {"edit_comic": edit_comic})
+    return render(request, "edit-comic.html", {'id': id, "edit_comic": edit_comic})
 
 
 def delete(request, id):
     del_comic = ComicData.objects.get(id=id)
     del_comic.delete()
-    return HttpResponseRedirect("my-comics/")
+    return HttpResponseRedirect("/comics/my-comics/")
 
