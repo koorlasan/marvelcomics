@@ -17,12 +17,13 @@
             <input type="text" name="description" value="{{ edit_comic.description }}" />
         </p>
         <p>
-            <label>Thumbnail</label><br>
-            <input type="image" name="thumbnail" value="{{ edit_comic.thumbnail }}" />
-        </p>
-        <p>
             <label>Dates</label><br>
             <input type="date" name="dates" value="{{ edit_comic.dates }}" />
+        </p>
+        <p>
+            <label>Thumbnail</label><br>
+            <input type="image" name="thumbnail" value=<img src ={{edit_comic.thumbnail}}>
+            <input type="file" name="thumbnail" value=''>
         </p>
         {% endif %}
         <input type="submit" value="Сохранить" >

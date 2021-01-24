@@ -84,7 +84,8 @@ def edit(request, id):
         edit_comic.dates = request.POST.get("dates")
         edit_comic.save()
         return HttpResponseRedirect("/")
-    return render(request, "edit-comic.html", {'id': id, "edit_comic": edit_comic})
+    else:
+        return render(request, "edit-comic.html", {'id': id, "edit_comic": edit_comic})
 
 
 def delete(request, id):
