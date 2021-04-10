@@ -1,9 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
+
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Edit comic</title>
 </head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 <body class="container">
     <form method="POST">
         {% csrf_token %}
