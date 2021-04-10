@@ -31,7 +31,7 @@ def show_results(request, title):
 
     if request.method == 'POST':
         pass
-
+ 
     else:
         res = requests.get(mygateway).json()
         comics = res['data']['results']
