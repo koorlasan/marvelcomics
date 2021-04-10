@@ -54,7 +54,7 @@ def show_results(request, title):
 
 def comic_info(request, id):
         all_comics = json.load(open('comic-information.json'))
-        if all_comics[id]['id'] >= 0 & all_comics[id]['id'] < len(all_comics):  # здесь что-то не то...
+        if all_comics[id]['id'] >= 0 & all_comics[id]['id'] < len(all_comics):  # здесь что-то не то... !!пересмотреть эту функцию
             with open('one-comic-info.json', 'w') as file2:
                 json.dump(all_comics[id], file2, indent=2)
             if request.method == "POST":
