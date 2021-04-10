@@ -9,3 +9,90 @@
       {% endblock %}
   </div>
 </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Edit comic</title>
+</head>
+<body class="container">
+    <form method="POST">
+        {% csrf_token %}
+        {% if edit_comic.id %}
+        <p>
+            <label>Title</label><br>
+            <input type="text" name="title" value="{{ edit_comic.title }}" />
+        </p>
+        <p>
+            <label>Description</label><br>
+            <input type="text" name="description" value="{{ edit_comic.description }}" />
+        </p>
+        <p>
+            <label>Dates</label><br>
+            <input type="date" name="dates" value="{{ edit_comic.dates }}" />
+        </p>
+        <p>
+            <label>Thumbnail</label><br>
+            <input type="image" name="thumbnail" value=<img src ={{edit_comic.thumbnail}}>
+        </p>
+        {% endif %}
+        <input type="submit" value="Сохранить" >
+    </form>
+</body>
+</html>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label for="title">Title: </label>
+        <input id="title" type="text" name="title" value="{{ edit_comic.title }}">
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="description">Description: </label>
+        <input id="description" type="text" name="description" value="{{ edit_comic.description }}">
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="dates">Date: </label>
+        <input id="dates" type="date" name="dates" value="{{ edit_comic.dates }}">
+    </form>
+        {% csrf_token %}
+        <form method="POST">
+        <label for="thumbnail">Image: </label>
+        <input id="thumbnail" type="image" name="thumbnail" value=<img src ={{edit_comic.thumbnail}}>
+
+            <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Edit comic</title>
+</head>
+<body class="container">
+{% if edit_comic.id %}
+    <form method="POST" class = "edit-comic">{% csrf_token %}
+        {{ form.as_p }}
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="title">Title: </label>
+        <input id="title" type="text" name="title" value="{{ edit_comic.title }}">
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="description">Description: </label>
+        <input id="description" type="text" name="description" value="{{ edit_comic.description }}">
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="dates">Date: </label>
+        <input id="dates" type="date" name="dates" value="{{ edit_comic.dates }}">
+    </form>
+        <form method="POST">
+            {% csrf_token %}
+        <label for="thumbnail">Image: </label>
+        <input id="thumbnail" type="image" name="thumbnail" value=<img src ={{edit_comic.thumbnail}}>
+   {% endif %}
+        <input type="submit" value="Сохранить" >
+    </form>
+</body>
+</html>

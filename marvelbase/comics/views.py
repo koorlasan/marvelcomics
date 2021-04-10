@@ -10,10 +10,6 @@ import requests
 import json
 
 
-def dbfill():
-    pass
-
-
 def index(request):
     if request.method == 'POST':
         title = request.POST['title']
@@ -76,16 +72,19 @@ def my_comics(request):
 
 
 def edit(request, id):
-    edit_comic = ComicData.objects.get(id=id)
     if request.method == "POST":
-        edit_comic.title = request.POST.get("title")
-        edit_comic.description = request.POST.get("description")
-        edit_comic.thumbnail = request.POST.get("thumbnail")
-        edit_comic.dates = request.POST.get("dates")
-        edit_comic.save()
-        return HttpResponseRedirect("/")
+        edit_comic = ComicDataForm(request.POST)
+        if edit_comic.is_valid():
+            comic = edit_comic.save(commit=False)
+            title = edit_comic.cleaned_data["title"]
+            description = edit_comic.cleaned_data["description"]
+            thumbnail = edit_comic.cleaned_data["thumbnail"]
+            dates = edit_comic.cleaned_data["dates"]
+            comic.save()
+            return HttpResponseRedirect("/")
     else:
-        return render(request, "edit-comic.html", {'id': id, "edit_comic": edit_comic})
+        edit_comic = ComicDataForm()
+    return render(request, "edit-comic.html", {'id': id, "edit_comic": edit_comic})
 
 
 def delete(request, id):
